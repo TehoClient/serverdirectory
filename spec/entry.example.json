@@ -1,0 +1,6 @@
+{
+  "name": "Your Server",
+  "address": "play.example.com",
+  "domains": ["play.example.com"],
+  "description": "A short description of your server."
+}
