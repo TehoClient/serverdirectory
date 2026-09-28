@@ -1,7 +1,7 @@
 # Teho Server Directory
 
 A community-contributed home for Minecraft server identities in Teho Client.
-Submit your server's name, addresses, and artwork to give it a consistent presence
+Submit your server's name, addresses and artwork to give it a consistent presence
 in the launcher server browser and Discord Rich Presence.
 
 ## Submit a server
@@ -31,7 +31,7 @@ limits described in the guide.
 
 You must own the server or be authorised to represent it, and have permission to
 submit its artwork. Reviewers check hostname ownership, content and server details
-before approving a listing. Passing automed checks does not guarantee acceptance.
+before approving a listing. Passing automated checks does not guarantee acceptance.
 
 The [example entry](spec/entry.example.json) and [JSON schema](spec/entry.schema.json)
 are available for reference. To update or remove a listing, open a PR against its
@@ -44,7 +44,7 @@ existing folder.
 - **Sponsored:** clearly labelled promoted listings with a defined expiry.
 
 Partnered servers appear first, followed by Sponsored and Community. Teho manages
-these placements seperately from submissions. Please do not include payment or
+these placements separately from submissions. Please do not include payment or
 billing details in issues or pull requests.
 
 ## Check your submission
@@ -61,7 +61,16 @@ These checks validate metadata and decode the artwork. They do not publish
 anything or require credentials. Generated files go into the gitignored `dist/`
 directory. Publication is handled by Teho after review.
 
-## Acknowledgement
+## Repository layout
+
+- `listings/`: reviewed server metadata and artwork.
+- `spec/`: the entry schema and a documentation-only example.
+- `tools/`: validation, publishing and tests.
+- `guides/`: contribution instructions.
+- `.github/`: GitHub workflows and the pull request template.
+- `placements.json`: maintainer-controlled promotion and ordering.
+
+## Acknowledgment
 
 The community submission approach was inspired by
 [Lunar Client's Server Mappings project](https://github.com/LunarClient/ServerMappings).
@@ -69,4 +78,4 @@ Thank you to the Lunar team for the inspiration. Teho Server Directory is
 independently developed and is not affiliated with or endorsed by Lunar Client.
 
 Server names and artwork belong to their respective owners. Submission does not
-transfer ownership or give others a general license to reuse the artwork.
+transfer ownership or give others a general licence to reuse the artwork.

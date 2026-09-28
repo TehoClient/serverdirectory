@@ -1,3 +1,4 @@
+"""Compile reviewed server submissions into the public CDN directory."""
 import hashlib
 import io
 import json

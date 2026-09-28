@@ -49,5 +49,6 @@ python -m pip install -r tools/requirements.txt
 python -m unittest discover -s tools/tests
 python tools/build.py
 ```
+
 Python 3.12 or newer is recommended. These checks need no CDN credentials.
 The example under `spec/` is documentation, not a published server listing.
